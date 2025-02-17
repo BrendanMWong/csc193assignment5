@@ -13,20 +13,20 @@
 
 	<fieldset style="border: 1px solid #ccc; padding: 10px; width: fit-content;">
 		<legend>Text</legend>
-		<textarea rows="4" cols="30"></textarea>
+		<textarea rows="4" cols="30" id="user-text-area"></textarea>
 	</fieldset>
 
 	<br>
 
 	<fieldset style="border: 1px solid #ccc; padding: 10px; width: fit-content;">
 		<legend>Fancify</legend>
-		<button>Bigger!</button>
+		<button onclick="makeBigger()">Bigger!</button>
 		<br>
 		<br>
-		<input type="radio">
+		<input type="radio" onclick="styleText()">
 		<label for="fancy">FancyShmancy</label>
 		<br>
-		<input type="radio">
+		<input type="radio" onclick="unstyleText()">
 		<label for="boring">BoringBetty</label>
 	</fieldset>
 </body>
