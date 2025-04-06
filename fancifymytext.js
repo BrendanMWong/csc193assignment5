@@ -32,3 +32,20 @@ function moo() {
 
     input.value = parts.join(". ").trim();
 }
+
+//set background color
+function setBackground(color) {
+    document.body.style.backgroundColor = color;
+    localStorage.setItem("backgroundColor", color);
+}
+
+//load background color when the page loads
+window.onload = function () {
+    let savedColor = localStorage.getItem("backgroundColor");
+    if (savedColor) {
+        document.body.style.backgroundColor = savedColor;
+    } else {
+        //default background color is white
+        document.body.style.backgroundColor = "white";
+    }
+};
